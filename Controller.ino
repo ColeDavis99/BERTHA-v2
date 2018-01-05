@@ -48,7 +48,8 @@ bool West = false;
 //Speed variable that will be set to SPEED_X constant (under what condition? Should I have a "Supersonic" mode using one of the aux buttons?"
 //I think it would be nice to make a function that takes in the raw serial value and performs calculations that return a number within the range 
 //of SPEED_LOW and SPEED_HIGH so BERTHA would have very specific speed control.
-int velocity;
+
+//int velocity;
 
 
 
@@ -130,6 +131,7 @@ void loop() {
    if(North && East){
     Serial.print("NORTHEAST");
     Serial.println();
+    
     //Left Tires
     analogWrite(inp1_pin, SPEED_LOW); 
     analogWrite(inp2_pin, 0);   
@@ -142,6 +144,7 @@ void loop() {
    else if(North && West){
     Serial.print("NORTHWEST");
     Serial.println();
+    
     //Left Tires
     analogWrite(inp1_pin, SPEED_HIGH); 
     analogWrite(inp2_pin, 0);   
@@ -154,6 +157,7 @@ void loop() {
    else if(South && West){
     Serial.print("SOUTHWEST");
     Serial.println();
+    
     //Left Tires
     analogWrite(inp1_pin, 0); 
     analogWrite(inp2_pin, SPEED_HIGH);   
@@ -166,6 +170,7 @@ void loop() {
    else if(South && East){
     Serial.print("SOUTHEAST");
     Serial.println();
+    
     //Left Tires
     analogWrite(inp1_pin, 0); 
     analogWrite(inp2_pin, SPEED_LOW);   
