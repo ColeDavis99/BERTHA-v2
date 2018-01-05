@@ -1,4 +1,4 @@
-B.E.R.T.H.A. Version 2 in action:  
+B.E.R.T.H.A. Version 2 in action: https://youtu.be/c56jTuV8xvs
 
 
 Description:
